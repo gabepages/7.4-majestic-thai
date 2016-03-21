@@ -55,7 +55,7 @@ var desserts = new DessertCollection([
   {
     name: 'Green Tea Ice Cream',
     price: 4,
-    description: "Imagine the best green tea youve ever had and multiply it by 100 and then add a hint of sugar and add some ice and guess what you dont have our green tea ice cream becuase ours will be way better because we add our secret recipe and make it in our secret ice cream room.",
+    description: "Imagine the best green tea youve ever had and multiply it by 100 and then add a hint of sugar and add some ice and guess what you dont have our green tea ice cream because ours will be way better because we add our secret recipe and make it in our secret ice cream room.",
     quantity: 0
   },
   {

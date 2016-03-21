@@ -31,7 +31,6 @@ var MenuCheckout = React.createClass({
         <tr key={item.cid} >
           <td className='special-name'>{item.get('name')}</td>
           <td>{item.get('price').toFixed(2)}</td>
-          <td>{item.get('quantity')}</td>
           <td>
             <button id='delete-btn' onClick={boundItemToClick} type="button" className="btn btn-danger">
               <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
@@ -55,7 +54,6 @@ var MenuCheckout = React.createClass({
               <tr>
                 <th>Item</th>
                 <th>Price</th>
-                <th>Quantity</th>
                 <th>Remove</th>
               </tr>
             </thead>

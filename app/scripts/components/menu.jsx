@@ -52,7 +52,7 @@ var Apps = React.createClass({
     }.bind(this));
       return(
         <div className="appitizers category">
-          <h2>Appitizers</h2>
+          <h2>Appetizers</h2>
           {menuItems}
         </div>
       );
