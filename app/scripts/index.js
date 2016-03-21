@@ -25,7 +25,7 @@ var apps = new AppCollection([
     quantity: 0
   },
   {
-    name: 'Edemame',
+    name: 'Edamame',
     price: 5,
     description: "Green pods that contain magical little bean. they will make your mom want to marry a guy named ed so you can constintly yell 'ED and MOMMY!' (Vegi)",
     quantity: 0
@@ -35,7 +35,7 @@ var entrees = new EntreeCollection([
   {
     name: 'Chicken Pad Thai',
     price: 12,
-    description: "Worm like noodles that test nothing like worms and more like heaven. Be warned, it has enough spice to it, to give you the farts for weeks but dont let deter you from picking this tasty meal",
+    description: "Worm like noodles that taste nothing like worms and more like heaven. Be warned, it has enough spice to it, to give you the farts for weeks but dont let deter you from picking this tasty meal",
     quantity: 0
   },
   {
@@ -47,7 +47,7 @@ var entrees = new EntreeCollection([
   {
     name: 'Thai Soup w/ side of Dumplings',
     price: 8.5,
-    description: "A scrumshish twist on your mamas chicken noole soup, and you get dumplings. Dont be a dingus and get the soup and dumplings! (Vegi)",
+    description: "A scrumptious twist on your mamas chicken noodle soup, and you get dumplings. Dont be a dingus and get the soup and dumplings! (Vegi)",
     quantity: 0
   }
 ]);
@@ -55,7 +55,7 @@ var desserts = new DessertCollection([
   {
     name: 'Green Tea Ice Cream',
     price: 4,
-    description: "Imagine the best green tea youve ever had and multiply it by 100 and then add a hint of sugar and add some ice and guess what you dont have have our green tea ice creame becuase ours will be way better because we add our secret recipe and make it in our secret ice cream room.",
+    description: "Imagine the best green tea youve ever had and multiply it by 100 and then add a hint of sugar and add some ice and guess what you dont have our green tea ice cream becuase ours will be way better because we add our secret recipe and make it in our secret ice cream room.",
     quantity: 0
   },
   {
