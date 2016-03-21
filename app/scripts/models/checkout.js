@@ -10,7 +10,8 @@ var Checkout = Backbone.Model.extend({
 });
 
 var CheckoutCollection = Backbone.Collection.extend({
-  model: Checkout
+  model: Checkout,
+
 });
 
 

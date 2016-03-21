@@ -5957,6 +5957,12 @@ img {
       .container .menu-content .total .items-list {
         font-size: 18px;
         text-align: left; }
+        .container .menu-content .total .items-list #delete-btn {
+          font-size: 15px;
+          width: 30px;
+          border-radius: 5px;
+          height: 30px;
+          padding: 2px 0px 0px 4px; }
       .container .menu-content .total #total {
         margin-top: 0px;
         display: inline-block;
@@ -6006,5 +6012,34 @@ footer {
       footer .footer-content .social-links a {
         color: rgba(115, 23, 16, 0.95);
         background-color: #d3b740; }
+
+.special-name {
+  color: rgba(115, 23, 16, 0.95); }
+
+.checkout {
+  text-align: center; }
+  .checkout h1 {
+    color: rgba(115, 23, 16, 0.95);
+    font-family: VPS Phuoc Thanh, Herculanum;
+    font-size: 55px;
+    font-weight: bold; }
+  .checkout h3 {
+    font-size: 28px;
+    font-family: VPS Phuoc Thanh, Herculanum;
+    font-weight: bold; }
+  .checkout button {
+    font-family: VPS Phuoc Thanh, Herculanum;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 25px auto;
+    background-color: rgba(120, 23, 16, 0.9);
+    border: 1px solid rgba(120, 23, 16, 0.9);
+    color: #d3b740; }
+    .checkout button:hover {
+      background-color: #d3b740;
+      border: 1px solid #d3b740;
+      color: rgba(115, 23, 16, 0.95); }
 
 /*# sourceMappingURL=app.css.map */

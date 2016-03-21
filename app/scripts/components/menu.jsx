@@ -3,12 +3,15 @@ var _ = require('underscore');
 var Backbone= require('backbone');
 var React= require('react');
 var ReactDOM = require('react-dom');
+require('backbone-react-component');
+
+
 
 var Menu = React.createClass({
-  handleClick: function(e){
-    e.preventDefault();
-    console.log(e);
-    console.log(this.props.checkoutCollection);
+  mixins: [Backbone.React.Component.mixin],
+  handleClick: function(item){
+    // console.log(item);
+    this.props.checkoutCollection.add(item);
   },
   render: function(){
 
@@ -24,8 +27,14 @@ var Menu = React.createClass({
 
 
 var Apps = React.createClass({
+  handleClick: function(item, e){
+    e.preventDefault();
+    this.props.onClick(item.attributes);
+  },
   render: function(){
     var menuItems = this.props.collection.map(function(item){
+      var boundItemToClick = this.handleClick.bind(this, item);
+
       return (
         <div key={item.cid} className="panel panel-default item">
           <div className="panel-heading item-title">
@@ -33,7 +42,7 @@ var Apps = React.createClass({
           </div>
           <div className="panel-body item-body">
             <p>{item.get('description')}</p>
-            <button type="button" className="btn btn-success" onClick={this.handleClick}>
+            <button type="button" className="btn btn-success" onClick={boundItemToClick}>
               <span className="glyphicon glyphicon-plus" aria-hidden="true"></span>
             </button>
             <p id="price">{item.get('price')}</p>
@@ -51,8 +60,13 @@ var Apps = React.createClass({
 });
 
 var Entrees = React.createClass({
+  handleClick: function(item, e){
+    e.preventDefault();
+    this.props.onClick(item.attributes);
+  },
   render: function(){
     var menuItems = this.props.collection.map(function(item){
+      var boundItemToClick = this.handleClick.bind(this, item);
       return(
         <div key={item.cid} className="panel panel-default item">
           <div className="panel-heading item-title">
@@ -60,7 +74,7 @@ var Entrees = React.createClass({
           </div>
           <div className="panel-body item-body">
             <p>{item.get('description')}</p>
-            <button type="button" className="btn btn-success" onClick={this.props.onClick} >
+            <button type="button" className="btn btn-success" onClick={boundItemToClick} >
               <span className="glyphicon glyphicon-plus" aria-hidden="true"></span>
             </button>
             <p id="price">{item.get('price')}</p>
@@ -78,8 +92,13 @@ var Entrees = React.createClass({
 });
 
 var Desserts = React.createClass({
+  handleClick: function(item, e){
+    e.preventDefault();
+    this.props.onClick(item.attributes);
+  },
   render: function(){
     var menuItems = this.props.collection.map(function(item){
+      var boundItemToClick = this.handleClick.bind(this, item);
       return(
         <div key={item.cid} className="panel panel-default item">
           <div className="panel-heading item-title">
@@ -87,7 +106,7 @@ var Desserts = React.createClass({
           </div>
           <div className="panel-body item-body">
             <p>{item.get('description')}</p>
-            <button type="button" className="btn btn-success" onClick={this.props.onClick} >
+            <button type="button" className="btn btn-success" onClick={boundItemToClick} >
               <span className="glyphicon glyphicon-plus" aria-hidden="true"></span>
             </button>
             <p id="price">{item.get('price')}</p>

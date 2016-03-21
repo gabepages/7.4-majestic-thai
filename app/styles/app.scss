@@ -193,6 +193,13 @@ img {
       .items-list{
         font-size: 18px;
         text-align: left;
+        #delete-btn{
+          font-size: 15px;
+          width: 30px;
+          border-radius: 5px;
+          height: 30px;
+          padding: 2px 0px 0px 4px;
+        }
        }
       #total{
         margin-top: 0px;
@@ -255,4 +262,42 @@ footer{
       }
     }
 }
+}
+
+
+.special-name{
+  color: rgba(115, 23, 16, 0.95);
+}
+
+
+
+.checkout{
+  text-align: center;
+  h1{
+    color: rgba(115, 23, 16, 0.95);
+    font-family: VPS Phuoc Thanh, Herculanum;
+    font-size: 55px;
+    font-weight: bold;
+  }
+  h3{
+    font-size: 28px;
+    font-family: VPS Phuoc Thanh, Herculanum;
+    font-weight: bold;
+  }
+  button{
+    font-family: VPS Phuoc Thanh, Herculanum;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 25px auto;
+    background-color: rgba(120, 23, 16, 0.9);
+    border: 1px solid  rgba(120, 23, 16, 0.9);
+    color: rgba(211, 183, 64, 1);
+    &:hover{
+      background-color: rgba(211, 183, 64, 1);
+      border: 1px solid rgba(211, 183, 64, 1);
+      color: rgba(115, 23, 16, 0.95);
+    }
+  }
 }
